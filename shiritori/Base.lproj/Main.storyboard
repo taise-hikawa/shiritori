@@ -15,48 +15,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqj-lC-9mm">
-                                <rect key="frame" x="61" y="131" width="292" height="471"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-il-s4l">
-                                <rect key="frame" x="269" y="55" width="125" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-il-s4l">
+                                <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="jcd-8b-Exs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Jo-Qf-lyK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NE5-Vu-yNY">
-                                <rect key="frame" x="61" y="697" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ここに入力" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NE5-Vu-yNY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8f8-Ah-1Bw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDv-uu-aDV">
-                                <rect key="frame" x="205" y="697" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="textSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eG7-nG-goa"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="しりとり" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqj-lC-9mm">
+                                <rect key="frame" x="0.0" y="94" width="414" height="713"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oqj-lC-9mm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2g0-cu-YAh"/>
+                            <constraint firstItem="dIp-il-s4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8M3-l5-d47"/>
+                            <constraint firstItem="NE5-Vu-yNY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B0C-Ex-QyA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dIp-il-s4l" secondAttribute="bottom" id="B8R-uc-ieZ"/>
+                            <constraint firstItem="dIp-il-s4l" firstAttribute="top" secondItem="oqj-lC-9mm" secondAttribute="bottom" id="FJZ-Ua-p5d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NE5-Vu-yNY" secondAttribute="trailing" id="h9a-nh-dQT"/>
+                            <constraint firstItem="oqj-lC-9mm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kUx-sY-Fy8"/>
+                            <constraint firstItem="NE5-Vu-yNY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m9S-XM-8mB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dIp-il-s4l" secondAttribute="trailing" id="q4H-Eo-6NT"/>
+                            <constraint firstItem="oqj-lC-9mm" firstAttribute="top" secondItem="NE5-Vu-yNY" secondAttribute="bottom" id="sHb-MN-d4c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="NE5-Vu-yNY" id="8oj-OK-tMK"/>
-                        <outlet property="textLabel" destination="oqj-lC-9mm" id="quh-EC-pQp"/>
+                        <outlet property="myTextField" destination="NE5-Vu-yNY" id="wDu-g8-opH"/>
+                        <outlet property="textLabel" destination="oqj-lC-9mm" id="Pzi-1y-mfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="-758"/>
+            <point key="canvasLocation" x="-215.94202898550725" y="-1105.5803571428571"/>
         </scene>
     </scenes>
 </document>
